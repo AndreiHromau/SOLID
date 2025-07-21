@@ -1,5 +1,4 @@
 public interface Workable {
 
-    void work();
-    void dontWork();
+    void canwork();
 }

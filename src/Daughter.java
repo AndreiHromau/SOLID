@@ -19,13 +19,11 @@ public class Daughter implements Mom, Workable {
     }
 
     @Override
-    public void work() {
-    }
-
-    @Override
-    public void dontWork() {
-        if (age <= 10) {
-            System.out.println("ДОЧЬ НЕ РАБОТАЕТ НА ЗАВОДЕ, ТАК КАК 10 лет");
+    public void canwork() {
+        if (age >= 18) {
+            System.out.println("РАБОТАЕТ НА ЗАВОДЕ, ТАК КАК ВЗРОСЛЫЙ");
+        } else {
+            System.out.println("НЕ РАБОТАЕТ НА ЗАВОДЕ, ТАК КАК НЕ ВЗРОСЛЫЙ");
         }
     }
 }

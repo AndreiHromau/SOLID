@@ -19,11 +19,11 @@ public class Son implements Mom, Workable {
     }
 
     @Override
-    public void work() {
-        System.out.println("СЫН РАБОТАЕТ НА ЗАВОДЕ, ТАК КАК ВЗРОСЛЫЙ");
-    }
-
-    @Override
-    public void dontWork() {
+    public void canwork() {
+        if (age >= 18) {
+            System.out.println("РАБОТАЕТ НА ЗАВОДЕ, ТАК КАК ВЗРОСЛЫЙ");
+        } else {
+            System.out.println("НЕ РАБОТАЕТ НА ЗАВОДЕ, ТАК КАК НЕ ВЗРОСЛЫЙ");
+        }
     }
 }
